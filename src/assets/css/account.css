@@ -1,0 +1,216 @@
+.account_wrap {
+    padding-top: 80px;
+    width: 308px;
+    margin: 0 auto;
+}
+.account_wrap h2 {
+    margin-bottom: 30px;
+    text-align:center;
+}
+.account_wrap h3 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.account_wrap .account_input {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #ababab;
+    font-size: 14px;
+}
+.account_wrap .input_wrap {
+    position: relative;
+}
+.signup_2 .input_outline p,
+.account_wrap .input_wrap p {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 14px;
+    color: #ff1759;
+    width: 308px;
+    letter-spacing: -0.025em;
+    word-break: keep-all;
+    text-align: left;
+}
+.account_wrap .btn_fill {
+    width: 100%;
+    height: 56px;
+    font-size: 17px;
+}
+.account_wrap .input_group > div:nth-child(n+2){
+    margin-top: 50px
+}
+.account_wrap .text_link {
+    margin-top: 35px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* 로그인 */
+.login {
+    text-align: center;
+}
+.login h2 img {
+    width: 266px;
+}
+.login .account_input input::placeholder {
+    color: #ababab;
+}
+.login .auto_login {
+    margin-top: 70px;
+    text-align: left;    
+}
+.login .auto_login label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.login .btn_fill {
+    margin: 100px 0 20px;
+    height: 52px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.login .btn_line {
+    width: 100%;
+    height: 52px;
+    line-height: 50px;
+    font-size: 17px;
+    border-width: 1px;
+}
+
+/* 회원가입 */
+.signup_2 h4 {
+    margin: 57px 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.signup_2 .input_outline {
+    position: relative;
+}
+.signup_2 input[type="text"] {
+    width: 100%;
+    height: 36px;
+    padding: 5px 17px;
+    font-size: 12px;
+}
+.signup_2 .input_outline input[type="text"] {
+    border: 1px solid #ababab;
+    border-radius: 5px;
+}
+.signup_2 .chk_gender p {
+    float: left;
+    width: calc((100% - 10px)/2);
+}
+.signup_2 .chk_gender p label {
+    display: block;
+    height: 36px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
+}
+.signup_2 .chk_gender p:first-child {
+    margin-right: 10px;
+}
+.signup_2 .chk_gender p input {
+    display: none;
+}
+.signup_2 .chk_gender input:checked + label {
+    border-color: #ff1759;
+    background-color: #ff1759;
+    color: #fff;
+}
+.signup_2 .combo_box select {
+    float: left;
+    width: calc((100% - 20px)/3);
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    text-align-last: right;
+    text-align: center;
+}
+.signup_2 .combo_box select:not(:last-child) {
+    margin-right: 10px;
+}
+.signup_2 .hint_text {
+    margin-top: 5px;
+}
+.signup_3 li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.signup_3 li label {
+    text-indent: -20px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    word-break: keep-all;
+    color: #ababab;
+}
+.signup_3 li:first-child label {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+.signup_3 li label a,
+.signup_3 li label span {
+    color: #ff1759;
+}
+.signup_3 li label a {
+    border-bottom: 1px solid #ff1759;
+}
+.signup .btn_fill {
+    margin-top: 70px;
+}
+/* 비밀번호 찾기 */
+.find_pwd h2 {
+    font-weight: 700;
+    text-align: center;
+}
+.find_pwd .btn_fill {
+    margin-top: 175px;
+    line-height: 56px;
+}
+.send_mail p {
+    font-size: 14px;
+    line-height: 30px;
+    word-break: keep-all;
+    letter-spacing: -0.025em;
+}
+.send_mail p a {
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+}
+.send_mail .text_link {
+    margin-top: 100px;
+}
+.new_pwd h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;    
+}
+.new_pwd .input_wrap {
+    margin-top: 50px;
+}
+.new_pwd #find_pwd {
+    margin-top: 270px;
+}
+.new_pwd #change_pwd {
+    margin-top: 170px
+}
+/* 이용약관 */
+.terms {
+    /* white-space: pre-line; */
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 50px 20px;
+}

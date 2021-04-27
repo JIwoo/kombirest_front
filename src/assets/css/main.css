@@ -1,0 +1,408 @@
+.main_wrap {
+    padding-bottom: 50px;
+}
+.main_card button {
+    border-radius: 20px;
+    background: rgb(255,23,149);
+    background: -moz-linear-gradient(135deg, rgba(255,23,149,1) 0%, rgba(255,23,89,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(255,23,149,1) 0%, rgba(255,23,89,1) 100%);
+    background: linear-gradient(135deg, rgba(255,23,149,1) 0%, rgba(255,23,89,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff1795",endColorstr="#ff1759",GradientType=1);
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}    
+.main_card button span::before,
+.main_card button span::after {
+    content: '';
+}
+.main_card button span::before {
+    width: 50px;
+    height: 50px;
+    background: url(../images/card_plus.png) 0 0 / cover no-repeat;
+}
+.main_card button span::after {
+    width: 165px;
+    height: 27px;
+    background: url(../images/card_logo.png) 0 0 /cover no-repeat;
+}
+.main_notice {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.main_notice span {
+    color: #ff1759;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* 활동 없을때 */
+.new_card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new_card button {
+    display: block;
+    margin: 0 auto;
+    width: 625px;
+    height: 360px;
+}
+.new_card button span::before {
+    display: block;
+    margin: 0 auto 37px;
+}
+
+.new_card button span::after {
+    display: block;
+    margin: 73px auto 0;
+}
+
+/* 활동 있을때 */
+.add_card {
+    padding: 40px 0 20px;
+}
+.add_card button {
+    display: block;
+    width: 100%;
+    height: 90px;
+}
+.add_card button span {
+    position: relative;
+    display: block;
+    padding-left: 110px;
+    text-align: left;
+}
+.add_card button span::before,
+.add_card button span::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.add_card button span::before {
+    display: block;
+    left: 40px;
+}
+.add_card button span::after {
+    display: block;
+    right: 17px;
+}
+
+.activity_card {
+    float: left;
+    position: relative;
+    padding: 25px;
+    width: calc((100% - 40px)/2);
+    height: 266px;
+    border-radius: 20px;
+    background: url(../images/card_bg0.png) center center /cover no-repeat;
+}
+.activity_card:nth-of-type(2n+1) {
+    margin-right: 40px;
+}
+.activity_card:nth-of-type(n+3) {
+    margin-top: 20px;
+}
+/* 속성박스 */
+.attr_wrap {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+}
+.attr_wrap .card_property {
+    width: 100%;
+    height: 100%;
+    background: url(../images/card_more.png) right center / 5px no-repeat;
+}
+.attr_wrap ul {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.attr_wrap ul.on {
+    display: block;    
+}
+.attr_wrap .attr_box li:not(:first-child) {
+    border-top: 1px solid #c6c6c6;
+}
+
+.attr_wrap ul button {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent
+}
+    .attr_wrap ul button:hover {
+        background-color: #ff1759;
+        color: #fff;
+    }
+/* 카드 내용 */
+.flex_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+.flex_box h2 button {
+    padding: 0 13px;
+    height: 28px;
+    background: #ff1759;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    font-size: 18px;
+}
+.flex_box > p {
+    font-size: 17px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.flex_box > em {
+    font-size: 15px;
+}
+.flex_box > em input {
+    width: 85px;
+    background-color: transparent;
+    color: #fff;
+}
+.flex_box > em input:last-child {
+    padding-left: 5px;
+}
+.user_list {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+}
+
+/* 친구 목록 */
+.friend_list h2 {
+    padding-top: 111px;
+    font-size: 24px;
+    font-weight: 700;
+}
+    .friend_list h2 .fa-bell {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #ff1759;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        cursor: pointer
+    }
+.friend_list li {
+    padding: 25px 0;
+    font-size: 17px;
+    line-height: 24px;
+}
+.friend_list li * {
+    line-height: 1;
+}
+.friend_list li.list {
+    border-bottom: 1px solid #c6c6c6;
+}
+    .friend_list li.list .btn_wrap {
+        float: right
+    }
+    .friend_list li.list .btn_wrap button {
+        float: left;
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        color: #777;
+    }
+    .friend_list li.list .btn_wrap button:last-child {
+        margin-left: 40px;
+    }
+.friend_list li.nothing {
+    text-align: center
+}
+.friend_list .btn_fill {
+    margin: 60px auto 0;
+    width: 360px;
+    height: 50px;
+}
+/* 친구 초대 */
+.invite h2 {
+    margin-bottom: 45px;
+    padding-top: 120px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.invite .search_wrap {
+    padding: 3px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+    .invite .search_wrap input {
+        background-color: transparent;
+        line-height: 50px;
+        font-size: 17px;
+        width: calc(100% - 56px);
+        padding-left: 20px;
+    }
+    .invite .search_wrap button {
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: #ff1759 url(../images/icon_search.png) center / 27px no-repeat;
+    }
+.invite #searchResultView {
+    margin-top: 30px;
+    min-height: 50px;
+}
+.invite .result_wrap.no_list {
+    text-align: center;
+    line-height: 50px;
+}
+.invite .result_wrap input {
+    padding-left: 10px;
+    width: calc(100% - 120px);
+    font-size: 17px;
+    line-height: 50px;
+}
+.invite .result_wrap button {
+    float: right;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #ff1759;
+}
+.invite .btn_fill {
+    width: 360px;
+    height: 50px;
+    margin: 60px auto 0;
+}
+/* 활동내역 */
+.history .category {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.history .category li {
+    float: left;
+    width: 120px;
+}
+.history .category li:nth-child(2) {
+    margin: 0 15px;
+}
+.history .flex_box {}
+.history .flex_box span {
+    display: block;
+    width: 72px;
+    height: 28px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+.history .flex_box span.doing {
+    background-color: #ff1759
+}
+.history .flex_box span.end {
+    background-color: #777
+}
+.history .flex_box h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.history .flex_box p {
+    font-size: 16px;
+}
+.history .flex_box em {
+}
+@media screen and (max-width: 720px) {
+    .main_wrap {
+        padding: 0 20px 30px;
+    }
+    .main_notice {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .main_card button {
+        font-size: 13px;
+    }
+    .main_card button span::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main_card button span::after {
+        width: 80px;
+        height: 13px;
+    }
+
+    .new_card button {
+        width: 216px;
+        height: 345px;
+    }
+    
+    .new_card button span::before {
+        margin-bottom: 20px;
+    }
+
+    .new_card button span::after {
+        margin-top: 150px;
+    }
+    .activity_card {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .activity_card:nth-child(2n+1) {
+        margin-right: 0;
+    }
+    /* 친구목록 */
+    .friend_list {
+        padding: 30px 20px 0;
+    }
+    .friend_list h2 {
+        padding-top: 0;
+        font-size: 21px;
+    }
+    .friend_list li.list .btn_wrap button:last-child {
+        margin-left: 20px;
+    }
+    .friend_list .btn_fill {
+        max-width: 360px;
+        width: 100%;
+    }
+    /* 친구초대 */
+    .invite {
+        padding: 30px 20px 0;
+    }
+    .invite h2 { 
+        padding-top: 0;
+        font-size: 21px;
+    }
+    .invite .btn_fill {
+        max-width: 360px;
+        width: 100%;
+    }
+}

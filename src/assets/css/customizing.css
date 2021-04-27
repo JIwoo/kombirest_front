@@ -1,0 +1,115 @@
+.customizing .only_me {
+    float: right;
+}
+.customizing .detail_list {
+    padding-top: 120px;
+    margin-bottom: 205px;
+}
+.customizing .add_list_input {
+    border-bottom: 1px solid #ababab;
+}
+.customizing .add_list_input input {
+    width: calc(100% - 50px);
+    height: 50px;
+    font-size: 15px;
+    padding: 6px 0;
+}
+.customizing .add_list_input .item_add {
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: right;
+    color: #ff1759;
+    font-size: 15px;
+    background-color: transparent
+}
+.customizing h3 {
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.customizing .detail_head {
+    margin-bottom: 43px;
+}
+.customizing .detail_list li {
+    border-bottom: 1px solid #c6c6c6;
+    font-size: 15px;
+    line-height: 50px;
+}
+.customizing .detail_list li span {
+    float: left;
+    display: block;
+    width: calc(100% - 94px)
+}
+.customizing .detail_list li .action {
+    float: left;
+    width: 94px;
+}
+.customizing .detail_list li .action > * {
+    float: left;
+}
+.customizing .detail_list li .action a {
+    display: inline-block;
+    margin: 7px 8px 0 0;    
+    width: 66px;
+    height: 34px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.customizing .detail_list li .item_del {
+    margin-top: 14px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_delete.png) center / 16px no-repeat;
+}
+.customizing .btn_fill {
+    width: 360px;
+    height: 56px;
+    margin: 0 auto;
+}
+.link_popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.link_popup .link_contents {
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 462px;
+    height: 224px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.link_popup input {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    margin: 90px auto 33px;
+}
+.link_popup .enter {
+    width: 188px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #ff1759;
+    color: #fff;
+    font-size: 15px;
+}
+.link_popup .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 28px;
+    top: 28px;
+    background: url(../images/icon_close.png) center no-repeat;
+}

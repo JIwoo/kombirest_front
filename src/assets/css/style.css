@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, button, textarea,
+*::after, *::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Noto Sans KR';
+}
+ol, ul, li {
+    list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button, input {
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+    vertical-align: top;
+    color: inherit
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    cursor: text;
+}
+img {
+    vertical-align: top;    
+}
+
+select {
+    padding: 0 30px 0 5px;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icon_select.png) no-repeat right 10px center;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+    display: none;
+}
+
+.mt25 {
+    margin-top: 25px !important;
+}
+.ml10 {
+    margin-left: 10px;
+}
+
+.bbNone {
+    border-bottom: none;
+}
+
+/***********************
+    시 작 !
+***********************/
+/* 공통 */
+#app {
+    /* padding-bottom: 180px; */
+}
+.inner_wrap {
+    width: 1024px;    
+    margin: 0 auto;
+}
+/* 해더 */
+header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+header + div {
+    padding-bottom: 80px
+}
+.header_search {
+    margin: 0 auto;
+    width: 1024px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.header_search > * {
+    float: left;
+    line-height: 40px;
+}
+.header_search h1 {
+    margin:-5px 0 0 -110px;
+    width: 132px;
+}
+.header_search h1 img {
+    width: 100%;
+    vertical-align: middle;
+}
+.header_search .product_sort {
+    width: 250px;
+    text-align: center;
+}
+.header_search .product_sort button {
+    width: 66px;
+    height: 33px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 15px;
+    color:#777;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.header_search .product_sort .active {
+    color:#fff;
+    background-color: #777;
+}
+.header_search .product_sort button + button {
+    margin-left: 15px;
+}
+.header_search .product_sort .btn_category {
+    margin-top: 5px;
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+    background: url('../images/ico_category.svg') no-repeat center;
+    background-size: 24px auto;
+    text-indent: -9999px;
+    border-radius: 0;
+}
+.header_search .search_bar {
+    position:relative;
+    width: 526px;
+    height: 33px;
+    border-radius: 15px;
+    border: 1px solid #b4b4b4;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+.header_search .search_bar input {
+    padding: 0 40px;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+}
+.header_search .search_bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33px;
+    height: 100%;
+    background: url(../images/icon_search01.png) no-repeat left center;
+}
+.header_search .link.login {
+    width: 185px;
+    margin-left: 30px;
+}
+.header_search .link.login li {
+    position: relative;
+    float: left;
+    width: 75px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center; 
+    color:#777;
+    border: 1px solid #777;
+    border-radius:  15px;
+}
+.header_search .link.login li:first-child {
+    margin-right: 35px;
+} 
+.header_search .link.login li:first-child::after {
+    position: absolute;
+    right: -17px;
+    top: 5px;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #777;
+    content: '';
+}
+.header_search .link.user {
+    margin-top: -5px;
+    float: right;
+}
+.header_search .link.user > ul > li {
+    position: relative;
+    float: left;
+}
+.header_search .link.user > ul > li > a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+.header_search .link.user > ul > li.alarm::after {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #2a4dff;
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    content: '';
+}
+.header_search .link.user > ul > li.alarm.new::after {
+    display: block;
+}
+.header_search .link.user > ul > li.more::after {
+    transition: 0.3s;
+    transform: scale(0);
+    content: '';
+}
+.header_search .link.user > ul > li.more.active::after {
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+    transform: scale(1);
+    width: 29px;
+    height: 2px;
+    background-color: #ff1759;
+}
+.header_search .link.user > ul > li img {
+    vertical-align: middle;
+}
+.header_search .link.user .dialog {
+    position: absolute;
+    right: -5px;
+    top: 50px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    z-index: 1;
+}
+.header_search .link.user .dialog li {
+    color: #777;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+.header_search .link.user .dialog li:hover {
+    color: #fff;
+    background-color: #ff1759;
+}
+
+.header_search .link.user .btn_more img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header_search .login_join {
+    float: right;
+}
+.header_search .login_join button {
+    display: none;
+    width: 111px;
+    height: 33px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 15px;
+    color: #777;
+    border: 1px solid #b4b4b4;
+    border-radius: 15px;
+}
+.header_search .login_join button.active {
+    display: block;
+}
+.header_nav {
+    text-align: center;
+    font-size: 17px;
+}
+.header_nav ul {
+    display: inline-block;
+}
+.header_nav li {
+    float: left;
+    padding: 28px 0;
+}
+.header_nav li:not(:last-child){
+    margin-right: 86px;
+}
+.header_search .btn_cate {
+    margin: 12px 0 0 10px;
+    display: inline-block;
+    width: 16px;
+    height: 9px;
+    background: url('../images/ico_dropup.svg') no-repeat center;
+    background-size: 16px auto;
+    text-indent: -9999px;
+}
+.header_search .btn_cate.active {
+    background: url('../images/ico_dropdown.png') no-repeat center;
+    background-size: 16px auto;
+}
+.hdSearchCate {
+    margin: 0 auto;
+    padding-left: 50px;
+    width: 560px;
+}
+
+.hdSearchCate li {
+    display: inline-block;
+    margin: 5px 40px 5px 0;
+}
+
+.hdSearchCate li:nth-child(6n) {
+    margin-right: 0;
+}
+
+.hdSearchCate li button {
+    display: inline-block;
+    font-size: 15px;
+    color: #666;
+}
+
+.hdSearchCate li button.active {
+    color: #ff1759;
+}
+
+footer {
+    /* position: absolute; */
+    width: 100%;
+    height: 180px;
+    /* left: 0; */
+    /* bottom: 0; */
+    background-color: #fff;
+}
+/* 푸터 */
+footer {
+    border-top: 1px solid #e2e2e2;
+    text-align: center;
+}
+footer ul {
+    padding-top: 25px;
+    display: inline-block;
+}
+footer li {
+    float: left;
+    padding: 0 25px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #303030;
+}
+footer li {
+    border-left: 1px solid #303030;
+}
+footer li:first-child {
+    border-left: 0;
+}
+/* 버튼 스타일 */
+.btn_fill {
+    display: block;
+    background-color: #ff1759;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.btn_line {
+    display: block;
+    border: 1px solid #ff1759;
+    border-radius: 10px;
+    text-align: center;
+    color: #ff1759
+}
+/* 체크박스 스타일 */
+.input_chkbox {
+    display: none;
+}
+.input_chkbox + label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+}
+.input_chkbox + label::before {
+    margin-right: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ababab;
+    content: "";
+    vertical-align: top;
+}
+
+.input_chkbox:checked + label::before {
+    border-color: #ff1759;
+    background: #ff1759 url(../images/input_check.png) center no-repeat;
+}
+
+/* 게시물생성팝업 */
+.addpost {
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    z-index: 1000;
+}
+.addpost .btn_top {
+    margin-bottom: 15px; 
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 0;
+    background: url(../images/icon_top.png) no-repeat center;
+    box-shadow: 0px 2px 12px 5px rgba(0,0,0,0.1)
+}
+.addpost .btn_addpost{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 0;
+    background: #ff1759 url(../images/add_post.png) center no-repeat; 
+    background-size: 100% auto;
+    box-shadow: 0px 2px 12px 5px rgba(0,0,0,0.1)
+}
+.addpost .post_popup {
+    padding-top: 107px;
+    padding-bottom: 66px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.addpost .post_pop_con {
+    width: 982px;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+/* 체크박스 스위치 */
+.input_switch {
+    display: none;
+}
+.input_switch + label {
+    display: block;
+    vertical-align: top;
+    position: relative;
+    line-height: 22px;
+}
+.input_switch + label::before {
+    margin-right: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #777;
+    content: '';
+    vertical-align: middle;
+}
+.input_switch + label::after {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+    transition: left 0.3s;
+    vertical-align: middle;
+}
+.input_switch:checked + label::before {
+    background-color: #ff1759;
+}
+.input_switch:checked + label::after {
+    left: 24px;
+}
+
+.listNonePage {
+    margin-top: 100px;
+}
+
+.listNonePage p {
+    padding-top: 150px;
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    line-height: 1.6;
+    background: url('../images/icon_notice.png') no-repeat top center;
+    background-size: 120px auto;
+}

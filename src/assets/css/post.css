@@ -1,0 +1,339 @@
+/* 게시물 생성하기 */
+.post_add {
+    padding: 0 22px;
+}
+.post_add h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px 0 40px;
+}
+.post_add .left_box {
+    float: left;
+    width: 430px;
+}
+.post_add .left_box .add_img {
+    margin-bottom: 40px;
+}
+.post_add .left_box .add_img li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    width: 135px;
+    height: 135px;
+}
+.post_add .left_box .add_img li:last-child {    
+    margin-right: 0;
+}
+.post_add .left_box .add_img li div {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+.post_add .left_box .add_img li button {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff1759;
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+}
+.post_add .left_box .add_img li input {
+    display: none;
+}
+.post_add .left_box .add_img li input + label {
+    display: block;
+    height: 100%;
+    background: #f2f2f2 url('../images/post_plus.png') center no-repeat;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.post_add .left_box .add_title {
+    margin-bottom: 35px;
+}
+.post_add .left_box .add_title input {
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid #777;
+    font-size: 14px;
+    line-height: 1;
+    color: #777
+}
+.post_add .left_box .add_description textarea {
+    padding: 15px;
+    width: 100%;
+    min-height: 220px;
+    font-size: 12px;
+    line-height: 1.7;
+    resize: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+}
+.post_add .left_box .add_description textarea::placeholder {
+    color:  #b4b4b4;
+}
+.post_add .left_box .txt_count {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 14px;
+    color:#666;
+}
+.post_add .right_box {
+    float: right;
+    padding-right: 40px;
+    width: 500px;
+    height: 490px;
+    overflow-y: scroll;
+}
+
+.post_add .right_box::-webkit-scrollbar {
+    width: 10px;
+}
+.post_add .right_box::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #eaeaea;
+}
+.post_add .right_box::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+.post_add .right_box .btn_cate {
+    margin-bottom: 15px;
+}
+.post_add .right_box .btn_cate button {
+    width: 447px;
+    height: 36px;
+    font-size: 14px;
+    background-color: #b4b4b4;
+    border-radius: 5px;
+}
+.post_add .right_box .add_activity {
+    margin-bottom: 40px;
+}
+.post_add .right_box .add_activity input {
+    padding: 0 10px;
+    width: 447px;
+    height: 36px;
+    font-size: 12px;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+.btn_activity {
+    display: block;
+    margin: 0 auto 50px;
+    width: 360px;
+    height: 56px;
+    background-color: #f2f2f2;
+    color: #777777;
+    border-radius: 10px;
+}
+.btn_activity.add {
+    background-color: #fff;
+    border: 1px solid #ff1759;
+    color: #ff1759;
+}
+.add_list_input {
+    border-bottom: 1px solid #ababab;
+}
+.add_list_input input {
+    width: calc(100% - 50px);
+    height: 37px;
+    font-size: 12px;
+    color: #777;
+    padding: 6px 0;
+}
+.add_list_input .item_add {
+    float: right;
+    padding-right: 5px;
+    width: 50px;
+    height: 37px;
+    text-align: right;
+    color: #ff1759;
+    font-size: 12px;
+    background-color: transparent
+}
+.item_list li {
+    padding: 0 10px 0 5px;
+    border-bottom: 1px solid #c6c6c6;
+    font-size: 15px;
+    line-height: 37px;
+}
+.item_list li span {
+    float: left;
+    display: block;
+    width: calc(100% - 96px)
+}
+.item_list li .action {
+    float: right;
+    position: relative;
+    /*float: left;*/
+    /*width: 96px;*/
+}
+.item_list li .action > * {
+    float: left;
+}
+.item_list li .action a {
+    display: inline-block;
+    margin: 6px 10px 0 0;    
+    height: 24px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.item_list li .item_url {
+    margin: 6px 10px 0 0;
+    width: 67px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 12px;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+.item_list li .item_url.active {
+    border: 1px solid #ff1759;
+    background-color: #ff1759;
+    color: #fff;
+}
+.item_list li .item_del {
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_delete.png) center / 16px no-repeat;
+}
+
+.item_list .keyword_pop {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 178px;
+    padding: 12px 15px;
+    font-size: 12px;
+    color: #333;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.item_list li input[name="item_name"] {
+    width: 100px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.item_list li .txt_set {
+    width:100px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+}
+.post_add > .btn_fill {
+    margin: 44px auto 15px;
+    width: 360px;
+    height: 56px;
+}
+.post_add .tip_text {
+    font-size: 17px;
+    color: #ff1759;
+    text-align: center;
+}
+.activity_popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.activity_popup .popup_con {
+    padding: 30px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+.activity_popup .popup_con > input {
+    padding: 0 5px;
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 12px;
+}
+.activity_popup .popup_con > input + input{
+    margin-top: 20px;
+}
+.activity_popup .popup_con .info_txt {
+    margin: 5px 0 0 5px;
+    font-size: 11px;
+    color: red;
+}
+.activity_popup .popup_con strong {
+    margin-bottom: 18px;
+    display: block;
+    color: #777;
+}
+.activity_popup .popup_con strong::before {
+    margin-right: 6px;
+    display: inline-block;
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: url('../images/icon_pencil.png') 0 0 no-repeat;
+    vertical-align: middle;
+}
+.activity_popup .popup_con .close {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+}
+.activity_popup .popup_con ul {
+    max-height: 260px;
+    overflow-y: auto;
+}
+.activity_popup .popup_con li {
+    float: left;
+    margin-bottom: 18px;
+    width: calc((100% - 40px)/3);
+    height: 45px;
+    text-align: center;
+}
+.activity_popup .popup_con li:nth-child(3n+2) {
+    margin: 0 20px 18px;
+}
+.activity_popup .popup_con li input {
+    display: none;
+}
+.activity_popup .popup_con li input + label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ff1759;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.activity_popup .popup_con li input:checked + label {
+    background-color: #ff1759;
+    color: #fff;
+}
+.activity_popup .popup_con .btn_cert {
+    margin: 25px auto 0;
+    display: block;
+    width: 150px;
+    height: 36px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #b4b4b4;
+    border-radius: 7px;
+}

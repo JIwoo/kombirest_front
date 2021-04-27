@@ -1,0 +1,215 @@
+.setting {
+    padding-top: 90px;
+}
+.setting > div {
+    float: left;
+}
+.setting_nav {
+    width: calc(100% - 811px);
+}
+.setting_nav strong {
+    margin-bottom: 60px;
+    display: block;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 700;
+}
+.setting_nav ul li {
+    margin-bottom: 62px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.setting_nav ul li:last-child {
+    margin-bottom: 0;
+}
+.setting_box {
+    width: 811px;
+}
+.setting_box.form_box {
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    padding: 50px;
+}
+.setting_box .form_head .profile {
+    float: left;
+}
+.setting_box .form_head .profile .img_wrap {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.setting_box .form_head .profile .img_wrap img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-width: 100%;
+}
+.setting_box .photoChange {
+    display: inline-block;
+}
+.setting_box .photoChange label {
+    margin-top: 10px;
+    display: inline-block;
+    color: #ff1759;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.setting_box .photoChange input[type="file"] { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.setting_box .form_head .email {
+    float: left;
+}
+.setting_box.text_box {
+    padding: 0 40px;
+}
+.setting_box.text_box h2 {
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.setting_box.text_box .text {
+    font-size: 12px;
+    line-height: 27px;
+}
+.setting_box.text_box .text p {
+    margin-top: 30px;
+}
+.setting_box.text_box .text p strong {
+    font-weight: 700;
+}
+.setting_box.inquiry .text a {
+    color: #ff1759;
+    font-weight: bold;
+    border-bottom: 1px solid #ff1759;
+}
+.form_head {
+    margin-bottom: 15px;
+}
+.form_head > div {
+    float: left;
+}
+.form_head .profile {
+    margin-right: 100px;
+    text-align: center;
+}
+.form_head .profile img {
+    vertical-align: middle;
+}
+.form_head .profile button {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ff1759
+}
+.form_head .email {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 80px;
+}
+.set_profile {
+    padding-left: 180px;
+}
+.set_profile li {
+    margin-bottom: 40px;
+}
+.set_profile li > strong {
+    margin-top: 5px;
+    display: block;
+    width: 90px;
+    float: left;
+    font-size: 14px;
+}
+.set_profile li > div {
+    float: left;
+}
+.set_profile li.nickname input {
+    padding-bottom: 5px;
+    width: 250px;
+    border-bottom: 1px solid #ababab;
+    font-size: 14px;
+    line-height: 1;
+}
+.set_profile li.gender p {
+    float: left;
+    margin-right: 7px;
+    width: 190px;
+    height: 45px;
+}
+.set_profile li.gender input {
+    display: none;
+
+}
+.set_profile li.gender input + label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #ababab;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+}
+.set_profile li.gender input:checked + label {
+    color: #fff;
+    background-color: #ff1759;
+    border-color: #ff1759;
+}
+.set_profile li.birth select {
+    display: block;
+    float: left;
+    border: 1px solid #ababab;
+    margin-right: 13px;
+    border-radius: 5px;
+    height: 45px;
+    width: 99px;
+    text-align-last: right;
+}
+.set_profile li.birth select:first-child {
+    width: 164px;
+}
+.set_pwd {
+    padding-left: 175px;
+    margin-bottom: 120px;
+}
+.set_pwd li {
+    margin-bottom: 40px;
+}
+.set_pwd li strong {
+    display: block;
+    float: left;
+    width: 132px;
+    line-height: 39px;
+    font-size: 14px;
+}
+.set_pwd li input {
+    padding: 7px 0 7px 5px;
+    float: left;
+    border-bottom: 1px solid #ababab;
+    width: 248px;
+    font-size: 14px;
+}
+.setting_box .btn_fill {
+    width: 307px;
+    height: 52px;
+    margin: 80px auto 0;
+} 
+
+.setting_box .set_pwd .cf > div {
+    position: relative;
+}
+.setting_box .set_pwd .account_input + p {
+    position: absolute;
+    top: 40px;
+    left: 135px;
+    font-size: 13px;
+    color: #ff1759;
+}

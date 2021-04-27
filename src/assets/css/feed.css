@@ -1,0 +1,121 @@
+.list_wrap {
+    /*    padding-top: 15px;
+    column-width: 190px;
+    column-gap: 18px;*/
+    padding-top: 55px;
+    column-width: 200px;
+    column-count: 4;
+    column-gap: 10px;
+}
+.list_wrap > article {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.list_wrap > article .post_img {
+    position: relative;
+    max-height: 450px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.list_wrap > article .post_img img,
+.list_wrap > article .post_img video {
+    width: 100%;
+    position: relative;
+}
+/* .list_wrap > article .post_user .profile {
+    margin: -28px auto 0;
+    position: relative;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+.list_wrap > article .post_user .profile img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}*/
+.list_wrap > article .post_user span {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+.list_wrap > article .post_title {
+    text-align: center;
+}
+.list_wrap > article .post_title strong {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+}
+.list_wrap > article .post_title p {
+    font-size: 14px;
+    color: #ff2c67;
+    font-weight: 500;
+}
+.post_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to top, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.4) 40% , rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 80%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    color: #fff;
+    transition: top 0.3s;
+}
+.list_wrap > article .post_img:hover .post_btn {
+    top: 0;
+}
+.post_btn .item_list::before {
+    display: inline-block; 
+    margin: -2px 10px 0 0;
+    width: 15px;
+    height: 19px;
+    content: '';
+    background: url(../images/post_list.png) 0 0 no-repeat;
+    vertical-align: middle;
+}
+.post_btn .post_like input {
+    display: none;
+}
+.post_btn .post_like input + label {
+    display: block;
+    cursor: pointer;
+}
+.post_btn .post_like input + label::before {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+    content: '';
+    width: 21px;
+    height: 16px;
+    background: url(../images/post_like_off.png) 0 0 no-repeat;
+}
+.post_btn .post_like input:checked + label::before {
+    background: url(../images/post_like_on.png) 0 0 no-repeat;
+}
+.post_btn .post_reply {
+    margin-left: 17px;
+}
+.post_btn .post_reply::before {
+    display: inline-block; 
+    margin-right: 10px;
+    width: 18px;
+    height: 14px;
+    content: '';
+    background: url(../images/post_reply.png) 0 0 no-repeat;
+    vertical-align: middle;
+}

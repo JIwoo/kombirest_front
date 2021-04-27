@@ -1,0 +1,211 @@
+.mypage_head {
+    padding: 40px 0;
+}
+.user_profile {
+    float: left;
+}
+.user_profile > div {
+    float: left;
+}
+.user_profile .user_img {
+    margin-right: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user_profile .user_img img {
+    width: 100%;
+}
+.user_profile .user_id {
+    margin-top: 10px;
+    width: 180px;
+}
+.user_profile .user_id p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.user_profile .user_id .btn_setting {
+    padding-left: 25px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #777;
+    background: url('../images/icon_setting.png') no-repeat left 6px center;
+    border: 1px solid #b4b4b4;
+    border-radius: 7px;
+}
+.user_profile .user_id .btn_follow {
+    margin-right: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 7px;
+}
+.user_profile .user_id .btn_follow.pre {
+    color: #777;
+    line-height: 27px;
+    border: 1px solid #b4b4b4;
+}
+.user_profile .user_id .btn_follow.cancel {
+    background-color: #bc0232;
+}
+.user_profile .user_id .btn_follow.ing {
+    background-color: #ff1759;
+}
+.mypage_nav {
+    margin: 25px 0 0 10px;
+    float: left;
+}
+.mypage_nav > ul > li {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+}
+.mypage_nav > ul > li a {
+    position: relative;
+    font-weight: 500;
+    font-size: 17px;
+}
+.mypage_nav > ul > li a::after {
+    position: absolute;
+    left: -2px;
+    bottom: -6px;
+    width: calc(100% + 4px);
+    height: 2px;
+    display: block;
+    content: '';
+    background-color: #ff1658;
+    transition: transform 0.3s;
+    transform: scale(0);
+}
+.mypage_nav li strong{
+    font-weight: 700;
+}
+.mypage_nav .router-link-exact-active {
+    color: #ff1658;
+}
+.mypage_nav .router-link-exact-active::after {
+    transform: scale(1);
+}
+
+.mypage_head + div .list_wrap {
+    padding-top: 0;
+}
+
+.follow_pop {
+    position: absolute;
+    top: 50px;
+    width: 390px;
+    height: 306px;
+    margin-left: -160px;
+    padding-top: 180px;
+    background: #fff url('../images/icon_follow01.png') no-repeat top 55px center;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.1);
+    z-index: 10000;
+}
+.follow_pop p {    
+    text-align: center;
+    line-height: 2;
+    font-size: 14px;
+    color: #777;
+}
+.follow_pop p span {
+    font-size: 17px;
+}
+
+.follow_list_pop {    
+    position: absolute;
+    top: 50px;
+    margin-left: -170px;
+    padding: 15px 10px;
+    width: 390px;
+    height: 396px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.1);
+    z-index: 10000;
+}
+.follow_list_pop li {
+    padding: 15px 0;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    overflow: hidden;
+}
+.follow_list_pop li:first-child{
+    border-top: 0;
+}
+.follow_list_pop .user_icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.follow_list_pop .user_icon img {
+    width: 100%;
+}
+.follow_list_pop .user_name {
+    margin: 12px 0 0 15px;
+    float: left;
+    max-width: 140px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.follow_list_pop .btn {
+    float: right;
+    position: relative;
+    padding-top: 5px;
+    width: 130px;
+    text-align: center;
+}
+.follow_list_pop .btn button {
+    display: inline-block;
+    width: 106px;
+    height: 29px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #777;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+.follow_list_pop .btn button.active {
+    color: #fff;
+    border: 1px solid #ff1658;
+    background-color: #ff1658;
+}
+.follow_list_pop .btn button.fail {
+    color: #fff;
+    border: 1px solid #bc0232;
+    background-color: #bc0232;
+}
+.follow_list_pop .btn span {
+    position: absolute;
+    top: 38px;
+    display: block;
+    font-size: 10px;
+    color: #bc0232;
+}
+.follow_list_pop ul {
+    padding: 0 10px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.follow_list_pop ul::-webkit-scrollbar {
+    width: 10px;
+}
+.follow_list_pop ul::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #eaeaea;
+}
+.follow_list_pop ul::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
